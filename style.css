@@ -30,16 +30,27 @@ header {
   margin: 0vw 0vw 0vw 3vw;
 }
 
+.container {
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: stretch;
+}
+
 main img {
-  opacity: 0.5;
+  grid-column: 1/4;
+  grid-row: 1;
+  opacity: 1;
 }
 
 main .info {
+  grid-column: 1/2;
+  grid-row: 1;
   float: left;
-  margin-top: -47vw;
-  background-color: sandybrown;
-  opacity: 1;
-  width: 30%;
-  height: 30vw;
-  padding-top: -20vw;
+  background-color: darkblue;
+  color: white;
+  opacity: 0.5;
+  padding: 5vw 5vw;
+  line-height: 1;
 }
